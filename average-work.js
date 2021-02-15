@@ -8,6 +8,8 @@ let prevTimestamp, nextTimestamp, nextBlock, timeDiff, average
 
 const times = []
 
+console.log("first block", blockchain.chain[blockchain.chain.length-1])
+
 for (let i = 0; i < 10000; i++) {
     prevTimestamp = blockchain.chain[blockchain.chain.length-1].timestamp
 
