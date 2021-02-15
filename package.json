@@ -1,12 +1,13 @@
 {
-  "name": "deltacoing",
+  "name": "hcoin",
   "version": "0.0.0",
   "description": "A basic cryptocurrency made in JavaScript",
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+      "dev": "npm run start-redis && nodemon index.js",
+      "start-redis": "redis-server --daemonize yes"
   },
   "author": "",
   "license": "GPL-3.0+",
@@ -17,6 +18,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "hex-to-binary": "^1.0.1"
+    "hex-to-binary": "^1.0.1",
+    "redis": "^2.8.0"
   }
 }

@@ -167,3 +167,7 @@ flycheck_*.el
 /network-security.data_site
 .sass-cache
 .jekyll-metadata
+
+#### CUSTOM ########
+
+dump.rbd
