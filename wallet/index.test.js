@@ -1,7 +1,7 @@
 const Wallet = require("./index")
 
 describe("Wallet", () => {
-    let Wallet
+    let wallet
 
     beforeEach(() => {
 	wallet = new Wallet()
